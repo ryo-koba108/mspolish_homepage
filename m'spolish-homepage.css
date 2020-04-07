@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+video{
+  width: 100%;
+  margin-bottom: -10px;
+}
+
+.feature{
+  background: blue;
+  padding: 50px;
+  background-attachment: fixed;
+}
+
+.categories{
+  font-size: 80px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.imgs{
+  width: 100%;
+}
+
+.discription{
+  padding: 30px;
+}
+
+.service-list{
+  background-color: #333;
+  padding: 50px;
+}
+
+
+.prices{
+  text-align: center;
+  background-image: url("homepage_img/prices2.jpg");
+  background-size: cover;
+  padding: 50px;
+}
+
+
+/*ボタン装飾*/
+.hidden_box label {
+  padding: 15px ;
+  font-weight: bold;
+  display: block;
+  color: #333;
+  background: #efefef;
+  border-radius: 5px;
+  cursor :pointer;
+  transition: 0.5s;
+  opacity: 0.9;
+}
+
+/*アイコンを表示*/
+.hidden_box label:before {
+  display: inline-block;
+  content: '\f107';
+  font-family: 'Font Awesome 5 Free';
+  padding-right: 5px;
+  transition: 0.2s;
+}
+
+/*ボタンホバー時*/
+.hidden_box label:hover {
+  background: silver;
+}
+
+/*アイコンを切り替え*/
+.hidden_box input:checked ~ label:before {
+  content: '\f106';
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+  color: #668ad8;
+}
+
+/*チェックは見えなくする*/
+.hidden_box input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.hidden_box .hidden_show {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 1s;/*ゆっくり表示させる*/
+}
+
+/*クリックで中身表示*/
+.hidden_box input:checked ~ .hidden_show {
+  padding: 10px 0;
+  height: auto;
+  opacity: 1;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.coating-price{
+  font-size: small;
+  
+}
+
+tr{
+  background-color: #fff;
+  opacity: 0.7;
+}
+
+th,
+td {
+  color: #333;
+  padding: 1rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  font-weight: normal;
+  font-size: .875rem;
+  color: #fff;
+  background: #50535d;
+  position: sticky;
+  top: 0;
+}
+
+@media(max-width: 500px) {
+  .heading {
+    display: none;
+  }
+  td {
+    display: block;
+  }
+  td::before {
+    content: attr(data-label);
+    font-size: .875rem;
+    color: #50535d;
+    display: block;
+    margin-bottom: 0.25rem;
+  }
+  .car-name {
+    background: #eee;
+  }
+}
+
+.infomation{
+  background:blue;
+  padding: 50px;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+
+footer{
+  background-color: #333;
+  padding: 10px 50px;
+}
+
+footer p{
+  text-align: center;
+}
