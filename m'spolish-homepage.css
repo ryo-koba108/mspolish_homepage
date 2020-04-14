@@ -15,6 +15,10 @@ video{
   background-attachment: fixed;
 }
 
+.feature-ex{
+  text-align: center;
+}
+
 .categories{
   font-size: 60px;
   margin-bottom: 40px;
