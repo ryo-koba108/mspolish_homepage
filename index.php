@@ -1,1 +1,0 @@
-<?php include_once("m'spolish-homepage.html"); ?>

@@ -1,83 +1,81 @@
-*{
+* {
   margin: 0;
   padding: 0;
   color: white;
 }
 
-video{
+video {
   width: 100%;
   margin-bottom: -10px;
 }
 
-.feature{
+.feature {
   background: black;
   padding: 50px;
   background-attachment: fixed;
 }
 
-.categories-f{
+.categories-f {
   font-size: 60px;
   margin-bottom: 10px;
   text-align: center;
 }
 
-.feature-ex{
+.feature-ex {
   text-align: center;
   margin-bottom: 50px;
 }
 
-.categories{
+.categories {
   font-size: 60px;
   margin-bottom: 40px;
   text-align: center;
 }
 
-.top-img{
+.top-img {
   width: 100%;
   height: 100%;
 }
 
-.imgs{
+.imgs {
   width: 100%;
   height: 100%;
   padding: 30px 0;
 }
 
-.discription{
+.discription {
   padding: 30px 0;
 }
 
-.coatingpage{
+.coatingpage {
   text-align: center;
 }
 
-.service-list{
+.service-list {
   background-color: #333;
   padding: 50px;
 }
 
-li{
+li {
   list-style: none;
 }
 
-
-.prices{
+.prices {
   text-align: center;
   background-image: url("homepage_img/prices2.jpg");
   background-size: cover;
   padding: 50px;
 }
 
-
 /*ボタン装飾*/
 .hidden_box label {
-  padding: 15px ;
+  padding: 15px;
   font-weight: bold;
   display: block;
   color: #333;
   background: #efefef;
   border-radius: 5px;
-  cursor :pointer;
+  cursor: pointer;
   transition: 0.5s;
   opacity: 0.9;
 }
@@ -85,8 +83,8 @@ li{
 /*アイコンを表示*/
 .hidden_box label:before {
   display: inline-block;
-  content: '\f107';
-  font-family: 'Font Awesome 5 Free';
+  content: "\f107";
+  font-family: "Font Awesome 5 Free";
   padding-right: 5px;
   transition: 0.2s;
 }
@@ -98,7 +96,7 @@ li{
 
 /*アイコンを切り替え*/
 .hidden_box input:checked ~ label:before {
-  content: '\f106';
+  content: "\f106";
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
   color: #668ad8;
@@ -115,7 +113,7 @@ li{
   padding: 0;
   overflow: hidden;
   opacity: 0;
-  transition: 1s;/*ゆっくり表示させる*/
+  transition: 1s; /*ゆっくり表示させる*/
 }
 
 /*クリックで中身表示*/
@@ -130,11 +128,11 @@ table {
   width: 100%;
 }
 
-.coating-price{
+.coating-price {
   font-size: small;
 }
 
-tr{
+tr {
   background-color: #fff;
   opacity: 0.7;
 }
@@ -148,18 +146,18 @@ td {
 }
 th {
   font-weight: normal;
-  font-size: .875rem;
+  font-size: 0.875rem;
   color: #fff;
   background: #50535d;
   position: sticky;
   top: 0;
 }
 
-@media(max-width: 700px) {
-  .imgs{
+@media (max-width: 700px) {
+  .imgs {
     padding: 30px 0 10px 0;
   }
-  .discription{
+  .discription {
     padding: 0 0 30px 0;
   }
 
@@ -171,7 +169,7 @@ th {
   }
   td::before {
     content: attr(data-label);
-    font-size: .875rem;
+    font-size: 0.875rem;
     color: #50535d;
     display: block;
     margin-bottom: 0.25rem;
@@ -181,19 +179,18 @@ th {
   }
 }
 
-.infomation{
-  background:black;
+.infomation {
+  background: black;
   padding: 50px;
   background-attachment: fixed;
   text-align: center;
 }
 
-
-footer{
+footer {
   background-color: #333;
   padding: 10px 50px;
 }
 
-footer p{
+footer p {
   text-align: center;
 }
